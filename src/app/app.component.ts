@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-componentscommunication';
+  name!: String;
+  childName!: string;
+  
+  onChildNameChange(event:string):void{
+    
+    this.childName=event;
+    
+  }
 }
